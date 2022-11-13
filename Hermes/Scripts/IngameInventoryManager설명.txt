@@ -1,0 +1,24 @@
+1.  ReadyToRaid.cs의 selectedCharacterArray가 실제 레이드시 사용되는 4명의 캐릭터를 담는 array임
+    레이드 시작 버튼 누르면 ReadyToRaid.cs의 startRaid()가 실행되므로
+
+    public void startRaid()
+    {
+        //이 위치에 selectedCharacterArray를 가져가는 코드가 있어야함 -> 그래야 인게임에서 4명의 캐릭터 출력 가능
+        Managers.Data.Ingame.InitGame(selectedCharacterArray);
+    }
+
+
+
+
+2.  Managers.Data.Ingame.QuitGame() //레이드 종료시 실행. 이함수가 실행되어야 레이드시 흭득한 아이템이 실제 내 인벤토리로 저장됨
+
+
+
+
+
+3.  Managers.Data.Ingame.IncreaseItemInInventory(int charSlotNum, int id, int quantity)  //아이템 흭득 함수.
+    캐릭터가 콜리전 충돌이 일어난 gameObject가 item이면 실행
+    인자는 앞에서 부터 캐릭터의 슬롯넘버, 충돌난 item의 id, 충돌난 item의 수량
+
+    DropItem.cs에는 id, quantity가 추가되어 있음
+

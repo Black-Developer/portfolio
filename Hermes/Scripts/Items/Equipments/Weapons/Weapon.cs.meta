@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2c87943a42379ef4faa565738f0ccdd2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - typeConfig: {fileID: 11400000, guid: 66dca519910414c4d82bc504633c4894, type: 2}
+  - effect: {instanceID: 0}
+  - weaponCollider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
