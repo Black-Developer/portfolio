@@ -1,3 +1,11 @@
+### 개인 정보
+
+> 이름 : 이채운
+
+> 이메일 : dlcodns11@gmail.com
+
+> 연락처 : 010-5172-2334
+
 # 헤르메스
 
 ## 프로젝트 소개
@@ -44,6 +52,8 @@
 
 
 ---
+
+## 이미지를 클릭할 시 유튜브 영상으로 연결됩니다.
 
 [![image](https://user-images.githubusercontent.com/70616640/219870856-4207aae8-70ec-4342-a7ef-7578cba6c230.png)](https://youtu.be/aySmGnA8aYs)
 
@@ -98,6 +108,49 @@
   * 벽, 장애물로 막혀있는 경우 적을 탐지하지 않음
 
   * 유동적으로 탐색 범위를 지정할 수 있음
+
+#### 애니메이션
+
+![6-51-10](https://user-images.githubusercontent.com/70616640/222688885-749f72dd-8b97-4787-99d7-eb5df9788b82.gif)
+
+* 전투 진입 시 목표 타겟팅
+
+  * 전투 중 적과 일정 범위 내에서 이동하면서 거리 유지
+  
+  * 전투 종료 후 다음 목적지로 이동
+
+![6-56-50](https://user-images.githubusercontent.com/70616640/222690176-c1d472b4-d817-4ba1-b210-07bb06971aa4.gif)
+
+* 이동은 사전에 선택한 경로를 따라서 이동
+
+  * 이동 과정에서 몬스터를 마주치는 경우 전투 진입
+  
+![image](https://user-images.githubusercontent.com/70616640/222691212-ee87534e-97d3-4b2a-9f7f-3e1de897c1b7.png)
+
+  
+* 애니메이션은 다음과 같이 동작 
+
+  * 애니메이션의 경우 AI 객체가 가진 StateMachine에서 상태 전이가 일어나는 경우 피라미터를 변경
+  
+  * 동일한 애니메이터로 다양한 무기의 애니메이션을 쉽게 추가하기 위해서 애니메이션 전환 단계를 분리
+
+![image](https://user-images.githubusercontent.com/70616640/222691541-a601829e-2668-4ed0-bf47-cec430390fdd.png)
+
+![image](https://user-images.githubusercontent.com/70616640/222692477-dad8ae5a-11c4-4cb9-8326-86c9c37af32a.png)
+
+* 자연스러운 이동을 위해 Blend Tree 사용
+
+  * 캐릭터의 시선처리 및 이동 속도에 따른 애니메이션의 자연스러운 변화를 위한 2D Blend
+
+![image](https://user-images.githubusercontent.com/70616640/222692177-940889e1-baf2-457d-a017-ccdb1bb67e54.png)
+
+  * 전투 시 타겟과 캐릭터가 바라보면서 이동하기 위한 2D Blend
+
+![image](https://user-images.githubusercontent.com/70616640/222693423-5d250346-fe60-4f8c-8136-5d2a28e35b42.png)
+
+  * 테스트 영상
+
+![7-14-52](https://user-images.githubusercontent.com/70616640/222694138-80db1d58-107f-4225-b259-a6e7bb3eaf60.gif)
 
 #### 외형
 
